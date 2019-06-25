@@ -1,6 +1,6 @@
 git remote -v
 git remote add origin <url>
-git push -u origin master
+git push -u origin master # (--set-upstream)
 
 git log --oneline --graph
 git show head
@@ -21,5 +21,12 @@ git reflog
 git merge featureX
 git merge --no-ff featureX
 
+git branch --all
+git log origin/master --oneline
+git remote set-head <remote> <branch>
+
+git fetch
+git pull --ff-only
+git pull --no-ff
 
 
