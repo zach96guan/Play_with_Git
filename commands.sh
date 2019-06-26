@@ -1,6 +1,10 @@
 git remote -v
 git remote add origin <url>
+<<<<<<< HEAD
 git push -u origin master  # (--set-upstream)
+=======
+git push -u origin master # (--set-upstream)
+>>>>>>> 86fc6ac9a51e15c7f0e77fc25cf843a5e251454d
 
 git log --oneline --graph
 
@@ -27,6 +31,7 @@ git log origin/master --oneline
 git remote set-head <remote> <branch>
 
 git fetch
+<<<<<<< HEAD
 git pull  # git fetch + git merge FETCH_HEAD
 git pull --ff-only
 git pull --no-ff
@@ -41,6 +46,10 @@ git rebase --abort
 git commit --amend -m <msg>
 git commit --amend --no-edit
 git rebase -i <after-this-commit>  # interactive rebase
+=======
+git pull --ff-only
+git pull --no-ff
+>>>>>>> 86fc6ac9a51e15c7f0e77fc25cf843a5e251454d
 
 git merge --squash featureX
 
