@@ -47,4 +47,7 @@ git pull --no-ff
 
 git merge --squash featureX
 git push --set-upstream origin featureX
+git push -d origin featureX
+
+
 
